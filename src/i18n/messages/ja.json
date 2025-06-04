@@ -1,0 +1,239 @@
+{
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "search": "検索",
+    "filter": "フィルター",
+    "sort": "並び替え",
+    "more": "もっと見る",
+    "back": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "close": "閉じる",
+    "open": "開く",
+    "refresh": "更新"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "cards": "カード",
+    "memoryMap": "記憶マップ",
+    "profile": "プロフィール",
+    "settings": "設定",
+    "bookmarks": "ブックマーク",
+    "achievements": "実績",
+    "analytics": "分析",
+    "search": "検索"
+  },
+  "header": {
+    "title": "AIカード読書",
+    "subtitle": "インテリジェントコンテンツカード生成プラットフォーム",
+    "advancedSearch": "高度な検索",
+    "generateCard": "カード生成",
+    "userMenu": "ユーザーメニュー",
+    "languageSwitch": "言語切り替え"
+  },
+  "aiPortal": {
+    "title": "AIスマート生成",
+    "subtitle": "リンクまたはキーワードを入力すると、AIが美しいカードを生成します",
+    "smartSearch": "スマート検索",
+    "linkGeneration": "リンク生成",
+    "searchTypes": {
+      "explore": "探索",
+      "learn": "学習",
+      "create": "創作",
+      "analyze": "分析"
+    },
+    "searchDescriptions": {
+      "explore": "新しい知識を発見",
+      "learn": "体系的な学習",
+      "create": "創造的なインスピレーション",
+      "analyze": "深い分析"
+    },
+    "placeholders": {
+      "url": "リンクを貼り付けてカードを生成...",
+      "search": "{type}AI知識..."
+    },
+    "suggestions": {
+      "title": "スマート提案",
+      "collapse": "折りたたむ",
+      "items": {
+        "mlBasics": {
+          "text": "機械学習の基礎",
+          "description": "機械学習の核心概念とアルゴリズムを理解",
+          "category": "AI基礎"
+        },
+        "ragTech": {
+          "text": "RAG技術原理",
+          "description": "検索拡張生成技術を探索",
+          "category": "AI技術"
+        },
+        "aiProduct": {
+          "text": "AI製品設計",
+          "description": "インテリジェントな製品体験を設計",
+          "category": "製品設計"
+        },
+        "deepLearning": {
+          "text": "深層学習応用",
+          "description": "深層学習の実際の応用を分析",
+          "category": "技術分析"
+        },
+        "nlpTech": {
+          "text": "自然言語処理",
+          "description": "NLPの核心技術を学習",
+          "category": "AI技術"
+        },
+        "aiEthics": {
+          "text": "AI倫理思考",
+          "description": "AI発展の倫理問題を探討",
+          "category": "倫理思考"
+        }
+      }
+    },
+    "features": {
+      "smartGeneration": "スマート生成",
+      "multiModal": "マルチモーダル入力",
+      "aiDriven": "AI駆動"
+    },
+    "buttons": {
+      "generate": "生成",
+      "voice": "音声入力",
+      "image": "画像入力",
+      "link": "ウェブリンク"
+    }
+  },
+  "cards": {
+    "title": "カード",
+    "filters": {
+      "all": "すべて",
+      "recent": "最近",
+      "trending": "トレンド",
+      "bookmarked": "ブックマーク済み"
+    },
+    "actions": {
+      "like": "いいね",
+      "bookmark": "ブックマーク",
+      "share": "共有",
+      "comment": "コメント",
+      "readMore": "もっと読む"
+    },
+    "metadata": {
+      "author": "著者",
+      "readingTime": "読書時間",
+      "difficulty": "難易度",
+      "category": "カテゴリー",
+      "tags": "タグ",
+      "createdAt": "作成日時"
+    },
+    "difficulty": {
+      "beginner": "初級",
+      "intermediate": "中級",
+      "advanced": "上級",
+      "expert": "専門家"
+    },
+    "empty": {
+      "title": "カードがありません",
+      "description": "最初のAIカードを生成してみましょう！",
+      "action": "カード生成"
+    }
+  },
+  "memoryMap": {
+    "title": "記憶マップ",
+    "subtitle": "知識の関連性を可視化",
+    "controls": {
+      "zoomIn": "拡大",
+      "zoomOut": "縮小",
+      "reset": "リセット",
+      "fullscreen": "フルスクリーン"
+    },
+    "nodeTypes": {
+      "concept": "概念",
+      "article": "記事",
+      "person": "人物",
+      "technology": "技術"
+    }
+  },
+  "profile": {
+    "title": "プロフィール",
+    "sections": {
+      "overview": "概要",
+      "activity": "活動",
+      "achievements": "実績",
+      "preferences": "設定"
+    },
+    "stats": {
+      "cardsRead": "読んだカード",
+      "timeSpent": "読書時間",
+      "streak": "連続日数",
+      "level": "レベル"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "sections": {
+      "general": "一般",
+      "appearance": "外観",
+      "notifications": "通知",
+      "privacy": "プライバシー",
+      "language": "言語"
+    },
+    "general": {
+      "autoRefresh": "自動更新",
+      "defaultView": "デフォルトビュー",
+      "cardsPerPage": "ページあたりのカード数"
+    },
+    "appearance": {
+      "theme": "テーマ",
+      "fontSize": "フォントサイズ",
+      "cardStyle": "カードスタイル"
+    },
+    "notifications": {
+      "push": "プッシュ通知",
+      "email": "メール通知",
+      "inApp": "アプリ内通知"
+    },
+    "language": {
+      "current": "現在の言語",
+      "available": "利用可能な言語"
+    }
+  },
+  "auth": {
+    "signIn": "サインイン",
+    "signUp": "サインアップ",
+    "signOut": "サインアウト",
+    "email": "メール",
+    "password": "パスワード",
+    "confirmPassword": "パスワード確認",
+    "forgotPassword": "パスワードを忘れた",
+    "rememberMe": "ログイン状態を保持",
+    "or": "または",
+    "continueWith": "続行",
+    "alreadyHaveAccount": "既にアカウントをお持ちですか？",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "agreeToTerms": "利用規約とプライバシーポリシーに同意します"
+  },
+  "errors": {
+    "general": "不明なエラーが発生しました",
+    "network": "ネットワーク接続エラー",
+    "notFound": "ページが見つかりません",
+    "unauthorized": "認証されていないアクセス",
+    "forbidden": "アクセスが禁止されています",
+    "validation": "入力検証に失敗しました",
+    "server": "サーバーエラー"
+  },
+  "success": {
+    "saved": "保存されました",
+    "deleted": "削除されました",
+    "updated": "更新されました",
+    "created": "作成されました",
+    "shared": "共有されました",
+    "bookmarked": "ブックマークされました"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "name": "AI卡片阅读平台",
+  "short_name": "AI卡片",
+  "description": "智能化的知识卡片阅读和管理平台",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity", "news"],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "桌面端主界面"
+    },
+    {
+      "src": "/screenshots/mobile-1.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "移动端主界面"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "生成AI卡片",
+      "short_name": "生成卡片",
+      "description": "快速生成AI知识卡片",
+      "url": "/?action=generate",
+      "icons": [
+        {
+          "src": "/icons/shortcut-generate.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "我的收藏",
+      "short_name": "收藏",
+      "description": "查看我的收藏内容",
+      "url": "/bookmarks",
+      "icons": [
+        {
+          "src": "/icons/shortcut-bookmarks.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "数据分析",
+      "short_name": "分析",
+      "description": "查看个人学习数据分析",
+      "url": "/analytics",
+      "icons": [
+        {
+          "src": "/icons/shortcut-analytics.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "搜索内容",
+      "short_name": "搜索",
+      "description": "搜索知识内容",
+      "url": "/?action=search",
+      "icons": [
+        {
+          "src": "/icons/shortcut-search.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "web+aicard",
+      "url": "/share?url=%s"
+    }
+  ],
+  "scope": "/",
+  "id": "ai-card-reading-platform"
+}

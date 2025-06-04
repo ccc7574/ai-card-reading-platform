@@ -1,0 +1,239 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "more": "More",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "refresh": "Refresh"
+  },
+  "navigation": {
+    "home": "Home",
+    "cards": "Cards",
+    "memoryMap": "Memory Map",
+    "profile": "Profile",
+    "settings": "Settings",
+    "bookmarks": "Bookmarks",
+    "achievements": "Achievements",
+    "analytics": "Analytics",
+    "search": "Search"
+  },
+  "header": {
+    "title": "AI Card Reading",
+    "subtitle": "Intelligent Content Card Generation Platform",
+    "advancedSearch": "Advanced Search",
+    "generateCard": "Generate Card",
+    "userMenu": "User Menu",
+    "languageSwitch": "Language Switch"
+  },
+  "aiPortal": {
+    "title": "AI Smart Generation",
+    "subtitle": "Enter a link or search keywords, AI generates beautiful cards for you",
+    "smartSearch": "Smart Search",
+    "linkGeneration": "Link Generation",
+    "searchTypes": {
+      "explore": "Explore",
+      "learn": "Learn",
+      "create": "Create",
+      "analyze": "Analyze"
+    },
+    "searchDescriptions": {
+      "explore": "Discover new knowledge",
+      "learn": "Systematic learning",
+      "create": "Creative inspiration",
+      "analyze": "Deep analysis"
+    },
+    "placeholders": {
+      "url": "Paste link to generate card...",
+      "search": "{type} AI knowledge..."
+    },
+    "suggestions": {
+      "title": "Smart Suggestions",
+      "collapse": "Collapse",
+      "items": {
+        "mlBasics": {
+          "text": "Machine Learning Basics",
+          "description": "Understand core concepts and algorithms of machine learning",
+          "category": "AI Fundamentals"
+        },
+        "ragTech": {
+          "text": "RAG Technology Principles",
+          "description": "Explore Retrieval-Augmented Generation technology",
+          "category": "AI Technology"
+        },
+        "aiProduct": {
+          "text": "AI Product Design",
+          "description": "Design intelligent product experiences",
+          "category": "Product Design"
+        },
+        "deepLearning": {
+          "text": "Deep Learning Applications",
+          "description": "Analyze practical applications of deep learning",
+          "category": "Technical Analysis"
+        },
+        "nlpTech": {
+          "text": "Natural Language Processing",
+          "description": "Learn core NLP technologies",
+          "category": "AI Technology"
+        },
+        "aiEthics": {
+          "text": "AI Ethics Thinking",
+          "description": "Explore ethical issues in AI development",
+          "category": "Ethics"
+        }
+      }
+    },
+    "features": {
+      "smartGeneration": "Smart Generation",
+      "multiModal": "Multi-modal Input",
+      "aiDriven": "AI Driven"
+    },
+    "buttons": {
+      "generate": "Generate",
+      "voice": "Voice Input",
+      "image": "Image Input",
+      "link": "Web Link"
+    }
+  },
+  "cards": {
+    "title": "Cards",
+    "filters": {
+      "all": "All",
+      "recent": "Recent",
+      "trending": "Trending",
+      "bookmarked": "Bookmarked"
+    },
+    "actions": {
+      "like": "Like",
+      "bookmark": "Bookmark",
+      "share": "Share",
+      "comment": "Comment",
+      "readMore": "Read More"
+    },
+    "metadata": {
+      "author": "Author",
+      "readingTime": "Reading Time",
+      "difficulty": "Difficulty",
+      "category": "Category",
+      "tags": "Tags",
+      "createdAt": "Created At"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "empty": {
+      "title": "No Cards Yet",
+      "description": "Start generating your first AI card!",
+      "action": "Generate Card"
+    }
+  },
+  "memoryMap": {
+    "title": "Memory Map",
+    "subtitle": "Visualize Knowledge Connections",
+    "controls": {
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "reset": "Reset",
+      "fullscreen": "Fullscreen"
+    },
+    "nodeTypes": {
+      "concept": "Concept",
+      "article": "Article",
+      "person": "Person",
+      "technology": "Technology"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "sections": {
+      "overview": "Overview",
+      "activity": "Activity",
+      "achievements": "Achievements",
+      "preferences": "Preferences"
+    },
+    "stats": {
+      "cardsRead": "Cards Read",
+      "timeSpent": "Time Spent",
+      "streak": "Streak Days",
+      "level": "Level"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "sections": {
+      "general": "General",
+      "appearance": "Appearance",
+      "notifications": "Notifications",
+      "privacy": "Privacy",
+      "language": "Language"
+    },
+    "general": {
+      "autoRefresh": "Auto Refresh",
+      "defaultView": "Default View",
+      "cardsPerPage": "Cards Per Page"
+    },
+    "appearance": {
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "cardStyle": "Card Style"
+    },
+    "notifications": {
+      "push": "Push Notifications",
+      "email": "Email Notifications",
+      "inApp": "In-App Notifications"
+    },
+    "language": {
+      "current": "Current Language",
+      "available": "Available Languages"
+    }
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password",
+    "rememberMe": "Remember Me",
+    "or": "or",
+    "continueWith": "Continue with",
+    "alreadyHaveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "agreeToTerms": "I agree to the Terms of Service and Privacy Policy"
+  },
+  "errors": {
+    "general": "An unknown error occurred",
+    "network": "Network connection error",
+    "notFound": "Page not found",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden",
+    "validation": "Input validation failed",
+    "server": "Server error"
+  },
+  "success": {
+    "saved": "Saved successfully",
+    "deleted": "Deleted successfully",
+    "updated": "Updated successfully",
+    "created": "Created successfully",
+    "shared": "Shared successfully",
+    "bookmarked": "Bookmarked successfully"
+  }
+}

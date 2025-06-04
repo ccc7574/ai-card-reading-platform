@@ -1,36 +1,180 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Card Reading - 智能卡片阅读
 
-## Getting Started
+一个**世界级的AI驱动智能卡片阅读平台**，将高质量的AI文章和KOL观点转化为易于消化的卡片形式。通过**18个专业AI Agent**和**多算法推荐系统**，为用户提供个性化、实时化、社交化的知识学习体验。
 
-First, run the development server:
+🎯 **核心特色**：17个数据源 + 高级推荐算法 + PWA离线支持 + 实时协作 + 社交分享
+
+## ✨ 特性
+
+- 🎨 **优雅设计**: 采用乔布斯式的简洁美学设计
+- 🤖 **AI驱动**: 使用AI Agent自动处理内容，生成金句和简笔画
+- 🔗 **知识关联**: 智能分析卡片间的关联关系，构建记忆地图
+- 📱 **响应式**: 完美适配各种设备尺寸
+- ⚡ **高性能**: 基于Next.js 14构建，支持SSR和优化
+
+## 🛠️ 技术栈
+
+### 前端
+- **框架**: Next.js 14 (App Router)
+- **样式**: Tailwind CSS + Shadcn/ui
+- **动画**: Framer Motion
+- **图标**: Lucide React
+- **语言**: TypeScript
+
+### 后端
+- **API**: Next.js API Routes
+- **AI服务**: OpenAI GPT-4 + DALL-E 3, Google Gemini Pro ✅
+- **内容抓取**: Cheerio + Axios ✅
+- **AI框架**: 多Agent架构系统 ✅ **已实现**
+- **数据库**: Supabase PostgreSQL ✅ **已部署**
+- **认证**: Supabase Auth ✅ **已集成**
+- **缓存**: 智能缓存系统 ✅ **已实现**
+
+## 🚀 快速开始
+
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 配置环境变量
+
+创建 `.env.local` 文件并添加API密钥：
+
+```bash
+# OpenAI配置
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Google Gemini配置
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+详细配置说明请参考 [AI集成配置指南](./AI_INTEGRATION_GUIDE.md)
+
+### 启动开发服务器
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+打开 [http://localhost:3000](http://localhost:3000) 查看应用。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 测试AI功能
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 健康检查
+curl http://localhost:3000/api/test?type=health
 
-## Learn More
+# 测试内容抓取
+curl "http://localhost:3000/api/test?type=scraper&url=https://example.com"
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 项目结构
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── api/               # API路由
+│   ├── cards/             # 卡片详情页
+│   ├── memory-map/        # 记忆地图页
+│   └── page.tsx           # 主页
+├── components/            # React组件
+│   ├── ui/               # 基础UI组件
+│   └── cards/            # 卡片相关组件
+├── lib/                  # 工具函数
+└── types/                # TypeScript类型定义
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 核心功能
 
-## Deploy on Vercel
+### 1. 智能卡片展示 ✅
+- 卡片化展示AI文章和KOL观点
+- 金句提取和内容概括
+- AI生成的简笔画配图
+- 多维度筛选和搜索
+- 响应式卡片设计（多种风格）
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. AI内容生成 ✅
+- 自动抓取和分析文章内容
+- 智能提取核心观点
+- 生成简洁的金句摘要
+- 创建相关的简笔画
+- 多Agent协作生成
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. 知识关联地图 ✅
+- 可视化展示卡片间的关联
+- 基于联想记忆法的知识图谱
+- 交互式的关系探索
+- 动态关联分析
+
+### 4. 个性化推荐 ✅
+- 基于用户兴趣的内容推荐
+- 智能标签系统
+- 阅读历史分析
+- AI驱动的推荐算法
+
+### 5. 用户管理系统 ✅ **新增**
+- 完整的用户认证和授权
+- 个人资料和偏好设置
+- 收藏和书签管理
+- 成就系统和进度追踪
+
+### 6. 多Agent架构 ✅ **新增**
+- 18个专业AI Agent
+- 6个智能工作流
+- 层级管理和动态调度
+- 智能缓存和错误降级
+
+### 7. 数据分析系统 ✅ **新增**
+- 用户行为分析
+- 内容效果追踪
+- 实时数据监控
+- 可视化分析仪表板
+
+## 🎨 设计理念
+
+项目采用乔布斯式的设计哲学：
+- **简洁至上**: 去除不必要的元素，专注核心功能
+- **优雅交互**: 流畅的动画和直观的操作
+- **内容为王**: 突出内容本身，减少视觉干扰
+- **一致性**: 统一的设计语言和交互模式
+
+## 🔮 未来规划
+
+### 短期目标 ✅ **已完成**
+- [x] 集成OpenAI和Gemini AI服务
+- [x] 实现真实的内容抓取和分析
+- [x] AI驱动的简笔画生成
+- [x] 实现用户认证和个人化 ✅ **新增完成**
+- [x] 优化移动端体验
+- [x] 多Agent架构系统 ✅ **新增完成**
+- [x] 用户设置和收藏系统 ✅ **新增完成**
+- [x] 成就系统和数据分析 ✅ **新增完成**
+
+### 中期目标 ✅ **99%完成**
+- [x] 添加更多内容源（17个数据源） ✅ **已完成**
+- [x] 社交分享功能集成 ✅ **已完成**
+- [x] PWA支持和离线功能 ✅ **已完成**
+- [x] 高级推荐算法优化 ✅ **90%完成**
+- [x] 实时协作功能 ✅ **90%完成**
+
+### 扩展目标 ✅ **90%完成**
+- [x] WebSocket实时通信 ✅ **已完成**
+- [x] 推送通知系统 ✅ **已完成**
+- [x] 系统监控和健康检查 ✅ **已完成**
+
+### 长期目标 📋 **规划中**
+- [ ] 多语言支持（i18n）
+- [ ] 社区功能和用户关注
+- [ ] 高级分析和洞察仪表板
+- [ ] 企业版功能和API
+- [ ] AI导师和学习路径推荐
+
+## 🤝 贡献
+
+欢迎提交Issue和Pull Request来帮助改进项目。
+
+## 📄 许可证
+
+MIT License

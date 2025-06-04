@@ -1,0 +1,239 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "more": "更多",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "close": "关闭",
+    "open": "打开",
+    "refresh": "刷新"
+  },
+  "navigation": {
+    "home": "首页",
+    "cards": "卡片",
+    "memoryMap": "记忆地图",
+    "profile": "个人中心",
+    "settings": "设置",
+    "bookmarks": "收藏",
+    "achievements": "成就",
+    "analytics": "分析",
+    "search": "搜索"
+  },
+  "header": {
+    "title": "AI卡片阅读",
+    "subtitle": "智能内容卡片生成平台",
+    "advancedSearch": "高级搜索",
+    "generateCard": "生成卡片",
+    "userMenu": "用户菜单",
+    "languageSwitch": "语言切换"
+  },
+  "aiPortal": {
+    "title": "AI智能生成",
+    "subtitle": "输入链接或搜索关键词，AI为你生成精美卡片",
+    "smartSearch": "智能搜索",
+    "linkGeneration": "链接生成",
+    "searchTypes": {
+      "explore": "探索",
+      "learn": "学习",
+      "create": "创作",
+      "analyze": "分析"
+    },
+    "searchDescriptions": {
+      "explore": "发现新知识",
+      "learn": "系统学习",
+      "create": "创意灵感",
+      "analyze": "深度分析"
+    },
+    "placeholders": {
+      "url": "粘贴链接生成卡片...",
+      "search": "{type}AI知识..."
+    },
+    "suggestions": {
+      "title": "智能建议",
+      "collapse": "收起",
+      "items": {
+        "mlBasics": {
+          "text": "机器学习基础",
+          "description": "了解机器学习的核心概念和算法",
+          "category": "AI基础"
+        },
+        "ragTech": {
+          "text": "RAG技术原理",
+          "description": "探索检索增强生成技术",
+          "category": "AI技术"
+        },
+        "aiProduct": {
+          "text": "AI产品设计",
+          "description": "设计智能化的产品体验",
+          "category": "产品设计"
+        },
+        "deepLearning": {
+          "text": "深度学习应用",
+          "description": "分析深度学习的实际应用",
+          "category": "技术分析"
+        },
+        "nlpTech": {
+          "text": "自然语言处理",
+          "description": "学习NLP的核心技术",
+          "category": "AI技术"
+        },
+        "aiEthics": {
+          "text": "AI伦理思考",
+          "description": "探讨AI发展的伦理问题",
+          "category": "伦理思考"
+        }
+      }
+    },
+    "features": {
+      "smartGeneration": "智能生成",
+      "multiModal": "多模态输入",
+      "aiDriven": "AI驱动"
+    },
+    "buttons": {
+      "generate": "生成",
+      "voice": "语音输入",
+      "image": "图像输入",
+      "link": "网页链接"
+    }
+  },
+  "cards": {
+    "title": "卡片",
+    "filters": {
+      "all": "全部",
+      "recent": "最近",
+      "trending": "热门",
+      "bookmarked": "已收藏"
+    },
+    "actions": {
+      "like": "点赞",
+      "bookmark": "收藏",
+      "share": "分享",
+      "comment": "评论",
+      "readMore": "阅读更多"
+    },
+    "metadata": {
+      "author": "作者",
+      "readingTime": "阅读时间",
+      "difficulty": "难度",
+      "category": "分类",
+      "tags": "标签",
+      "createdAt": "创建时间"
+    },
+    "difficulty": {
+      "beginner": "初级",
+      "intermediate": "中级",
+      "advanced": "高级",
+      "expert": "专家"
+    },
+    "empty": {
+      "title": "暂无卡片",
+      "description": "开始生成你的第一张AI卡片吧！",
+      "action": "生成卡片"
+    }
+  },
+  "memoryMap": {
+    "title": "记忆地图",
+    "subtitle": "可视化知识关联",
+    "controls": {
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "reset": "重置",
+      "fullscreen": "全屏"
+    },
+    "nodeTypes": {
+      "concept": "概念",
+      "article": "文章",
+      "person": "人物",
+      "technology": "技术"
+    }
+  },
+  "profile": {
+    "title": "个人中心",
+    "sections": {
+      "overview": "概览",
+      "activity": "活动",
+      "achievements": "成就",
+      "preferences": "偏好"
+    },
+    "stats": {
+      "cardsRead": "已读卡片",
+      "timeSpent": "阅读时长",
+      "streak": "连续天数",
+      "level": "等级"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "sections": {
+      "general": "通用",
+      "appearance": "外观",
+      "notifications": "通知",
+      "privacy": "隐私",
+      "language": "语言"
+    },
+    "general": {
+      "autoRefresh": "自动刷新",
+      "defaultView": "默认视图",
+      "cardsPerPage": "每页卡片数"
+    },
+    "appearance": {
+      "theme": "主题",
+      "fontSize": "字体大小",
+      "cardStyle": "卡片样式"
+    },
+    "notifications": {
+      "push": "推送通知",
+      "email": "邮件通知",
+      "inApp": "应用内通知"
+    },
+    "language": {
+      "current": "当前语言",
+      "available": "可用语言"
+    }
+  },
+  "auth": {
+    "signIn": "登录",
+    "signUp": "注册",
+    "signOut": "退出",
+    "email": "邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "forgotPassword": "忘记密码",
+    "rememberMe": "记住我",
+    "or": "或",
+    "continueWith": "继续使用",
+    "alreadyHaveAccount": "已有账户？",
+    "noAccount": "没有账户？",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "agreeToTerms": "我同意服务条款和隐私政策"
+  },
+  "errors": {
+    "general": "发生了未知错误",
+    "network": "网络连接错误",
+    "notFound": "页面未找到",
+    "unauthorized": "未授权访问",
+    "forbidden": "禁止访问",
+    "validation": "输入验证失败",
+    "server": "服务器错误"
+  },
+  "success": {
+    "saved": "保存成功",
+    "deleted": "删除成功",
+    "updated": "更新成功",
+    "created": "创建成功",
+    "shared": "分享成功",
+    "bookmarked": "收藏成功"
+  }
+}

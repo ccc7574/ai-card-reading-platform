@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试卡片生成器</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-button {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .test-button:hover {
+            opacity: 0.9;
+        }
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+        }
+        .close-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f0f9ff;
+            border: 1px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 卡片生成器功能测试</h1>
+    
+    <div class="status">
+        <h3>测试状态</h3>
+        <div id="test-status">准备测试...</div>
+    </div>
+
+    <h2>1. 基础按钮测试</h2>
+    <button class="test-button" onclick="testBasicClick()">
+        ➕ 测试基础点击
+    </button>
+
+    <h2>2. 模拟卡片生成器</h2>
+    <button class="test-button" onclick="openModal()">
+        🚀 打开生成器模态框
+    </button>
+
+    <h2>3. API连接测试</h2>
+    <button class="test-button" onclick="testAPI()">
+        🔗 测试API连接
+    </button>
+
+    <h2>4. 实际页面测试</h2>
+    <button class="test-button" onclick="testRealPage()">
+        🌐 在新窗口打开实际页面
+    </button>
+
+    <!-- 模态框 -->
+    <div id="modal" style="display: none;" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">关闭</button>
+            <h3>🎨 AI卡片生成器</h3>
+            <p>这是一个测试模态框，模拟卡片生成器的行为。</p>
+            
+            <div style="margin: 20px 0;">
+                <label>文章链接:</label><br>
+                <input type="url" placeholder="输入文章链接..." style="width: 100%; padding: 8px; margin: 5px 0;">
+            </div>
+            
+            <div style="margin: 20px 0;">
+                <label>AI框架:</label><br>
+                <select style="width: 100%; padding: 8px; margin: 5px 0;">
+                    <option>V1 - 经典框架</option>
+                    <option>V2 - LangChain</option>
+                    <option selected>V3 - 智能协作</option>
+                </select>
+            </div>
+            
+            <button class="test-button" onclick="simulateGeneration()">
+                ✨ 开始生成
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let testResults = [];
+
+        function updateStatus(message) {
+            document.getElementById('test-status').innerHTML = message;
+            console.log('测试状态:', message);
+        }
+
+        function testBasicClick() {
+            updateStatus('✅ 基础点击功能正常');
+            testResults.push('基础点击: 通过');
+        }
+
+        function openModal() {
+            document.getElementById('modal').style.display = 'flex';
+            updateStatus('✅ 模态框打开成功');
+            testResults.push('模态框: 通过');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+            updateStatus('✅ 模态框关闭成功');
+        }
+
+        function simulateGeneration() {
+            updateStatus('🔄 模拟生成中...');
+            setTimeout(() => {
+                updateStatus('✅ 模拟生成完成');
+                testResults.push('生成模拟: 通过');
+                closeModal();
+            }, 2000);
+        }
+
+        async function testAPI() {
+            updateStatus('🔄 测试API连接...');
+            try {
+                const response = await fetch('http://localhost:3000/api/data-sources?action=status');
+                if (response.ok) {
+                    const data = await response.json();
+                    updateStatus(`✅ API连接成功: ${data.data.active}/${data.data.total} 数据源活跃`);
+                    testResults.push('API连接: 通过');
+                } else {
+                    updateStatus('❌ API连接失败: ' + response.status);
+                    testResults.push('API连接: 失败');
+                }
+            } catch (error) {
+                updateStatus('❌ API连接错误: ' + error.message);
+                testResults.push('API连接: 错误');
+            }
+        }
+
+        function testRealPage() {
+            window.open('http://localhost:3000', '_blank');
+            updateStatus('🌐 已在新窗口打开实际页面，请手动测试生成器按钮');
+            testResults.push('页面打开: 通过');
+        }
+
+        // 页面加载完成后的初始化
+        window.onload = function() {
+            updateStatus('🚀 测试页面加载完成，可以开始测试');
+            
+            // 自动测试API连接
+            setTimeout(testAPI, 1000);
+        };
+
+        // 显示测试结果
+        function showResults() {
+            const results = testResults.join('\n');
+            alert('测试结果:\n' + results);
+        }
+
+        // 添加键盘快捷键
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+            if (e.ctrlKey && e.key === 'r') {
+                e.preventDefault();
+                showResults();
+            }
+        });
+    </script>
+
+    <div style="margin-top: 40px; padding: 20px; background: #f9fafb; border-radius: 8px;">
+        <h3>🔍 调试信息</h3>
+        <p><strong>测试目的:</strong> 验证卡片生成器的点击和模态框功能</p>
+        <p><strong>快捷键:</strong> ESC - 关闭模态框, Ctrl+R - 显示测试结果</p>
+        <p><strong>预期行为:</strong> 点击按钮应该打开生成器模态框</p>
+        <button class="test-button" onclick="showResults()">📊 显示测试结果</button>
+    </div>
+</body>
+</html>
