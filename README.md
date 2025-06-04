@@ -235,6 +235,25 @@ GEMINI_API_KEY=your_gemini_api_key
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+### 📚 **Documentation**
+
+Comprehensive documentation is available in the `/docs` folder:
+
+#### **📋 Quick Links**
+- **[📖 Complete Documentation Index](./docs/README.md)** - Full documentation overview
+- **[🏗️ Architecture Docs](./docs/architecture/)** - System design and AI agent architecture
+- **[🛠️ Development Guides](./docs/development/)** - Setup, integration, and development guides
+- **[🚀 Deployment Docs](./docs/deployment/)** - GitHub setup and deployment instructions
+- **[✨ Feature Docs](./docs/features/)** - Detailed feature implementation guides
+- **[📖 User Guides](./docs/guides/)** - Tutorials, demos, and project summaries
+
+#### **🎯 Popular Documents**
+- [AI Integration Guide](./docs/development/AI_INTEGRATION_GUIDE.md) - OpenAI & Gemini setup
+- [Multi-Agent Architecture](./docs/architecture/MULTI_AGENT_ARCHITECTURE.md) - 18 AI Agents system
+- [Database Setup Guide](./docs/development/DATABASE_SETUP_GUIDE.md) - Supabase configuration
+- [Demo Script](./docs/guides/DEMO_SCRIPT.md) - Complete platform demonstration
+- [Features Summary](./docs/guides/FEATURES_SUMMARY.md) - All features overview
+
 ### 📄 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -377,6 +396,25 @@ http://localhost:3000
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 打开 Pull Request
+
+### 📚 **项目文档**
+
+完整的项目文档位于 `/docs` 文件夹中：
+
+#### **📋 快速链接**
+- **[📖 完整文档索引](./docs/README.md)** - 全面的文档概览
+- **[🏗️ 架构文档](./docs/architecture/)** - 系统设计和AI Agent架构
+- **[🛠️ 开发指南](./docs/development/)** - 安装、集成和开发指南
+- **[🚀 部署文档](./docs/deployment/)** - GitHub设置和部署说明
+- **[✨ 功能文档](./docs/features/)** - 详细的功能实现指南
+- **[📖 用户指南](./docs/guides/)** - 教程、演示和项目总结
+
+#### **🎯 热门文档**
+- [AI集成指南](./docs/development/AI_INTEGRATION_GUIDE.md) - OpenAI和Gemini设置
+- [多Agent架构](./docs/architecture/MULTI_AGENT_ARCHITECTURE.md) - 18个AI Agent系统
+- [数据库设置指南](./docs/development/DATABASE_SETUP_GUIDE.md) - Supabase配置
+- [演示脚本](./docs/guides/DEMO_SCRIPT.md) - 完整平台演示
+- [功能总结](./docs/guides/FEATURES_SUMMARY.md) - 所有功能概览
 
 ### 📄 **许可证**
 
